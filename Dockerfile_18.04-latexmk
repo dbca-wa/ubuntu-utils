@@ -1,0 +1,11 @@
+# Dockerfile to build base ubuntu image with full latexmk support.
+# Prepare the base environment.
+FROM ubuntu:18.04
+MAINTAINER asi@dbca.wa.gov.au
+ENV DEBIAN_FRONTEND=noninteractive
+
+#install latexmk to generate pdf file
+#RUN apt-get update -y && apt-get install -y latexmk vim
+RUN apt-get update -y && apt-get install -y texlive-full
+
+RUN apt-get update -y && apt-get install -y vim
