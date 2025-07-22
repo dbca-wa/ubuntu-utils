@@ -3,6 +3,8 @@ name: 'Build Docker image'
 on:
   push:
     branches: [master]
+  schedule:
+    - cron: '1 1 1 * *' # Monthly
 
 env:
   REGISTRY: ghcr.io
