@@ -1,7 +1,8 @@
 Ubuntu utility Docker image
 ===========================
 
-Customised Ubuntu Dockerfiles.
+Ubuntu Server Docker image, with additional utilities installed. Built nightly against `ubuntu:latest`.
 
-* Dockerfile: minimal utility image for sysadmin purposes.
-* Dockerfile_18.04-latexmk: Ubuntu plus a full install of Latex.
+```bash
+docker pull ghcr.io/dbca-wa/ubuntu-utils:latest
+```
