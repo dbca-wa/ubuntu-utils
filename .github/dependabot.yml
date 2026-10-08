@@ -4,4 +4,7 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
-    target-branch: 'master'
+    commit-message:
+      prefix: '[actions] '
+    cooldown:
+      default-days: 7
